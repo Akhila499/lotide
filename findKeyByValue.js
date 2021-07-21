@@ -8,12 +8,12 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const findKeyByValue = function(obj,value){
+const findKeyByValue = function(obj,value) {
   arr = Object.keys(obj);
   
-  for(let val of arr){
+  for(let val of arr) {
    
-    if (obj[val] === value){
+    if (obj[val] === value) {
       console.log(val);
       return val;
     }
