@@ -7,5 +7,5 @@ const head = function (array){
 }
 
 
-module.exports = head ;
+module.exports = head;
 
