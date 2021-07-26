@@ -1,12 +1,4 @@
-const assertEqual = function(actual, expected) {
-  let emojiFail = String.fromCodePoint(0x1F534);
-  let emojiPass = String.fromCodePoint(0x1F7E2);
-  if (actual === expected) {
-    console.log(`${emojiPass} Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`${emojiFail} Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+
 
 const eqArrays = function(array1, array2) {
   
@@ -28,8 +20,5 @@ const eqArrays = function(array1, array2) {
   
 };
 
+module.exports = eqArrays;
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), true); // => should FAIL
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => should PASS
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true); // => should FAIL
